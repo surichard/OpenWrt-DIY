@@ -13,6 +13,9 @@
 # Modify default IP
 sed -i 's/192.168.201.1/192.168.10.1/g' package/base-files/files/bin/config_generate
 
+# Modify hostname
+sed -i 's/OpenWrt/ixecloud/g' package/base-files/files/bin/config_generate
+
 # Add luci-app-ssr-plus
 pushd package/lean
 git clone --depth=1 https://github.com/fw876/helloworld
